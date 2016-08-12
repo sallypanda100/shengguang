@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=640,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+	<div class="web_wrap">
+		<!--主页面-->
+		<div class="web">
+			<header>
+				<div class="left">
+					<label for="user">
+						<i class="fa fa-bars"></i>
+						<span>1</span>
+					</label>
+				</div>
+				<div class="right">
+					<label for="search">
+						<i class="fa fa-search"></i>
+					</label>
+					
+				</div>
+				<div class="center">
+					<img src="images/title.png"/>
+				</div>
+			</header>
+			<section class="content_wrap">
+				主体内容
+			</section>
+			<footer>
+				<ul>
+					<li>
+						<a class="active" href=""><i class="fa fa-home"></i><span>首页</span></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-paw"></i><span>GIMC</span></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-pencil"></i><span>文章</span></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-flag"></i><span>资源</span></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-mortar-board"></i><span>GIMC</span></a>
+					</li>
+				</ul>
+			</footer>
+			
+			
+			
+			
+			<input type="checkbox" id="slideMenu" class="hide_input"/>
+			<div class="slideMenu">
+				这是一个侧边栏
+			</div>
+		</div>
+		<include></include>
+		<!--弹窗：个人登录页-->
+		<input type="checkbox" id="user" class="hide_input" checked=""/>
+		<div class="page user">
+			<div class="page_head clearfix">
+				<div class="left">
+					<label for="user">
+						<i class="fa fa-close"></i>
+					</label>
+				</div>
+			</div>
+			<img class="logo" src="images/logo.png"/>
+			<div class="input_wrap">
+				<span >
+					<i class="fa fa-user"></i>
+				</span>
+				<input placeholder="请输入已验证的手机号或邮箱"/>
+			</div>
+			<div class="input_wrap">
+				<span >
+					<i class="fa fa-lock"></i>
+				</span>
+				<input type="password" placeholder="请输入密码"/>
+			</div>
+			
+			<div class="forget_pw">
+				<a href="#">
+					<i class="fa fa-question"></i>忘记密码</a>
+			</div>
+			
+			<div class="button_wrap">
+				<button><label for="user_center">登录</label></button>
+				<button>注册</button>
+			</div>
+			
+		</div>
+		
+		
+		
+		<!--弹窗:个人中心页-->
+		<input type="checkbox" id="user_center" class="hide_input"  checked=""/>
+		<div class="page user_center">
+			<div class="page_head clearfix">
+				<div class="left">
+					<label for="user_center">
+						<i class="fa fa-close"></i>
+					</label>
+				</div>
+				<div class="right">
+					<button>
+						<label for="page_search_list">
+							<i class="fa fa-search"></i>			
+						</label>
+					</button>
+					
+					<input type="text" placeholder="Search"/>
+				</div>
+			</div>
+			<div class="page_body">
+				
+				<div class="head_wrap">
+					<div class="head_img">
+						<img src="images/logo.png"/>
+					</div>
+					<div class="tips">
+						1
+					</div>
+				</div>
+				
+				<!--此处省略N行-->
+				
+				<div class="user_nav">
+					<div class="nav_title">
+						<h2>GIMC<i class="fa fa-angle-down fr"></i></h2>
+						<ul>
+							<li>省广介绍</li>
+							<li>新闻资讯</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--弹窗：搜索页-->
+		<input type="checkbox" id="search" class="hide_input"/>
+		<div class="page search">
+			<div class="page_head clearfix">
+				<div class="left">
+					<label for="search">
+						<i class="fa fa-close"></i>
+					</label>
+					
+				</div>
+				<div class="right">
+					<button>
+						<label for="page_search_list">
+							<i class="fa fa-search"></i>			
+						</label>
+					</button>
+					
+					<input type="text" placeholder="Search"/>
+				</div>
+			</div>
+			<div class="page_body">
+				<!--搜索弹窗的子页：关键词列表-->
+				<div class="page_search_index">
+					<h2>热搜</h2>
+					<div class="keyword_list">
+						<a href="">省广股份12</a>
+						<a href="">省广股份</a>
+						<a href="">省广股份</a>
+						<a href="">省广股份</a>
+						<a href="">省广股份</a>
+						<a href="">省广股份</a>
+						<a href="">省广股份</a>
+					</div>
+				</div>
+				<!--搜索弹窗的子页：搜索结果列表-->
+				<input type="checkbox" id="page_search_list" class="hide_input"/>
+				<div class="page_search_list">
+					<div class="item">
+						<h2>GIMCVS易车，汽车电商“风口”上的2种姿势</h2>
+						<p>
+							2014年11月易车市值接近汽车之家时，正值公布上季度
+财报，而在2014年Q3业绩易车网净1.86亿，超过汽车
+1.71亿。看来美国投资人是完全按净利润、自由现金流
+为这两家公司估值，对汽车电商...
+						</p>
+						<span>
+							陈小蚊
+						</span>
+						<b>
+							2015-11-12 06:57
+						</b>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+	</div>		
+	<script type="text/javascript">
+	</script>
+	</body>
+</html>
